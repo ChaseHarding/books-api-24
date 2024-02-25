@@ -15,7 +15,7 @@ app.use(express.urlencoded({extended: true}))
 
 // ROUTES
 app.get('/', (req, res) => {
-  res.send('Welcome to the Hello World! API')
+  res.send('Welcome to the Books! API')
 })
 
 // LISTEN
