@@ -13,6 +13,10 @@ mongoose.connect(process.env.MONGO_URI, {useNewUrlParser: true, useUnifiedTopolo
 
 // MIDDLEWARE
 app.use(express.urlencoded({extended: true}))
+app.use(express.json())
+
+//apply CORS middleware 
+app.use(cors())
 
 // ROUTES
 app.use('/books', bookController)
